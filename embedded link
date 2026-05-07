@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+<body>
+<center><h1>Types of Fruits</h1></center>
+<nav>
+<a href="#apple">Apple</a>
+<a href="#banana">Banana</a>
+<a href="#mango">Mango</a>
+<a href="#orange">Orange</a>
+</nav>
+<section id="apple">
+<h2>Apple</h2>
+<p>Apple is a healthy fruit rich in fiber.</p>
+<video width="250" height="150" controls>
+<source src="apple.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</section>
+<section id="banana">
+<h2>Banana</h2>
+<p>Banana is a great source of energy and potassium.</p>
+<video width="250" height="150" controls>
+<source src="banana.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</section>
+<section id="mango">
+<h2>Mango</h2>
+<p>Mango is known as the king of fruits.</p>
+<video width="250" height="150" controls>
+<source src="mango.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</section>
+<section id="orange">
+<h2>Orange</h2>
+<p>Orange is rich in Vitamin C and boosts immunity.</p>
+<video width="250" height="150" controls>
+<source src="orange.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</section>
+</body>
+</html>
