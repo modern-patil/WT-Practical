@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+<body>
+<h1>Welcome to My Website</h1>
+<h2>About HTML</h2>
+<p> HTML stands for HyperText Markup Language.
+It is the basic language used to create webpages.
+</p>
+<p> HTML is easy to learn and widely used.<br>
+It helps structure the content of web pages.<br>
+Developers use HTML along with CSS and JavaScript.
+</p>
+</body>
+</html>
