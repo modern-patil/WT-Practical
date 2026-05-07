@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Student Registration</title>
+
+<style>
+
+body {
+
+margin: 0;
+
+font-family: Arial, sans-serif;
+
+height: 100vh;
+
+background: linear-gradient(to right, #6dd5ed, #2193b0);
+
+display: flex;
+
+justify-content: center;
+
+align-items: center;
+
+}
+
+.container {
+
+text-align: center;
+
+width: 100%;
+
+}
+
+h2 {
+
+color: #333;
+
+margin-bottom: 20px;
+
+}
+
+.form-box {
+
+background: #f2f2f2;
+
+padding: 25px;
+
+width: 350px;
+
+border-radius: 12px;
+
+margin: auto;
+
+box-shadow: 0 10px 25px rgb(0,0,0,0.2);
+
+text-align: left;
+
+}
+
+label {
+
+font-weight: bold;
+
+display: block;
+
+margin-top: 10px;
+
+}
+
+input, select, textarea {
+
+width: 100%;
+
+padding: 10px;
+
+margin-top: 5px;
+
+border-radius: 6px;
+
+border: 1px solid #ccc;
+
+}
+
+.gender {
+
+margin-top: 5px;
+
+}
+
+.gender input {
+
+width: auto;
+
+margin-right: 5px;
+
+}
+
+button {
+
+width: 100%;
+
+margin-top: 20px;
+
+padding: 12px;
+
+border: none;
+
+border-radius: 8px;
+
+background: linear-gradient(to right, #6a5acd, #7b68ee);
+
+color: white;
+
+font-size: 16px;
+
+cursor: pointer;
+
+}
+
+button:hover {
+
+opacity: 0.9;
+
+}
+
+.output {
+
+background-color: #66f7ff;
+
+padding: 15px;
+
+margin-top: 20px;
+
+border-radius: 8px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Student Registration</h2>
+
+<div class="form-box">
+
+<form method="post">
+
+<label>Full Name</label>
+
+<input type="text" name="fullname" required>
+
+
+<label>Email</label>
+
+<input type="email" name="email" required>
+
+
+<label>Gender</label>
+
+<div class="gender">
+
+<input type="radio" name="gender" value="Male"> Male
+
+<input type="radio" name="gender" value="Female"> Female
+
+<input type="radio" name="gender" value="Other"> Other
+
+</div>
+
+
+<label>Course</label>
+
+<select name="course">
+
+<option>IT</option>
+
+<option>Comp. Eng.</option>
+
+<option>AI/ML</option>
+
+<option>DS</option>
+
+<option>Civil Eng.</option>
+
+<option>Mech. Eng.</option>
+
+<option>Elec. Eng.</option>
+
+</select>
+
+
+<label>Address</label>
+
+<textarea name="address" rows="3"></textarea>
+
+
+<button type="submit" name="submit">Submit Form</button>
+
+</form>
+
+</div>
+
+<?php
+
+if (isset($_POST['submit'])) {
+
+$name = $_POST['fullname'];
+
+$email = $_POST['email'];
+
+$gender = $_POST['gender'] ?? "Not specified";
+
+$course = $_POST['course'];
+
+$address = $_POST['address'];
+
+
+echo "<div class='form-box output'>";
+
+echo "<h3>Submitted Data</h3>";
+
+echo "Full Name: " . htmlspecialchars($name) . "<br>";
+
+echo "Email: " . htmlspecialchars($email) . "<br>";
+
+echo "Gender: " . htmlspecialchars($gender) . "<br>";
+
+echo "Course: " . htmlspecialchars($course) . "<br>";
+
+echo "Address: " . nl2br(htmlspecialchars($address));
+
+echo "</div>";
+
+}
+
+?>
+
+</div>
+
+</body>
+
+</html>
