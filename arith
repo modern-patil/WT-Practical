@@ -1,0 +1,23 @@
+<?php 
+// Arithmetic Operators 
+$a = 20; 
+$b = 10; 
+echo "<h2>Arithmetic Operators</h2>"; 
+echo "a = $a, b = $b <br>"; 
+echo "Addition (a + b): " . ($a + $b) . "<br>"; 
+echo "Subtraction (a - b): " . ($a - $b) . "<br>"; 
+echo "Multiplication (a * b): " . ($a * $b) . "<br>"; 
+echo "Division (a / b): " . ($a / $b) . "<br>"; 
+echo "Modulus (a % b): " . ($a % $b) . "<br>"; 
+echo "Exponentiation (a ** 2): " . ($a ** 2) . "<br><br>"; 
+// Logical Operators 
+$x = true; 
+$y = false; 
+echo "<h2>Logical Operators</h2>"; 
+echo "x = true, y = false <br>"; 
+echo "x AND y (x && y): " . ($x && $y ? 'true' : 'false') . "<br>"; 
+echo "x OR y (x || y): " . ($x || $y ? 'true' : 'false') . "<br>"; 
+echo "NOT x (!x): " . (!$x ? 'true' : 'false') . "<br>"; 
+echo "x AND y (x and y): " . ($x and $y ? 'true' : 'false') . "<br>"; 
+echo "x OR y (x or y): " . ($x or $y ? 'true' : 'false') . "<br>"; 
+?> 
