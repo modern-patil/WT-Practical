@@ -1,0 +1,65 @@
+/* Internal CSS */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Inside HTML</title>
+    <style>
+        body {
+            background: #f5f5f5;
+            font-family: "Segoe UI", sans-serif;
+        }
+        h1 {
+            color: #2a2a8f;
+            text-align: center;
+            margin-top: 30px;
+        }
+        p {
+            color: #e65c00;
+            font-size: 17px;
+            padding: 10px 20px;
+        }
+        .mark {
+            background: #ffff99;
+            border-radius: 4px;
+            padding: 3px 6px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Internal Styling Demo</h1>
+    <p>This text demonstrates <span class="mark">internal styling</span> within a webpage.</p>
+    <p>The styles are written inside the <code>&lt;style&gt;</code> section of the <code>&lt;head&gt;</code></p>
+</body>
+</html>
+
+/*External CSS */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>External Styling Demo</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <h1>External CSS Demo</h1>
+    <p>This content uses styles from a separate CSS file.</p>
+    <p>External stylesheets help maintain consistency across multiple pages.</p>
+</body>
+</html>
+
+/* main.css */
+body {
+    background: #eaf9ff;
+    font-family: Tahoma, sans-serif;
+}
+h1 {
+    color: #008844;
+    text-align: center;
+    margin-bottom: 20px;
+}
+p {
+    color: #b32400;
+    font-size: 17px;
+    margin: 12px 18px;
+}
